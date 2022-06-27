@@ -29,7 +29,8 @@ public class Product {
         this.price = price;
     }
 
-    public double priceTag() {
-        return price;
+    public String priceTag() {
+        String priceString = String.format("%f", price);
+        return priceString;
     }
 }
